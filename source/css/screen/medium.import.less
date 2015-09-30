@@ -1,0 +1,38 @@
+@media (min-width: (@screen-medium + 1px)) and (max-width: @screen-large) {
+	h2 {
+    font: @font-extralight-default;
+    margin: 0;
+  }
+	#main {
+    max-width: @screen-medium;
+  }
+  #footer {
+    .footer {
+      &__menu {
+        > div {
+          padding: 0px 15px;
+          max-width: 170px;
+        }
+      }
+    }
+  }
+  #comission {
+    .comission {
+      &__percentage {
+        img {
+          width: 320px;
+        }
+      }
+    }
+  }
+  #register-form {
+    .controls {
+      &__input {
+        width: 230px;
+      }
+      &__btn {
+        width: 294px;
+      }
+    }
+  }
+}

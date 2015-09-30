@@ -1,0 +1,104 @@
+/** Layout styles (header, footer) */
+
+#main {
+  height: 100%;
+  min-width: @screen-small;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  > header, > section, > footer {
+    display: inline-block;
+    width: 100%;
+  }
+  .wrapper {
+    padding: 50px @offset-horizontal;
+  }
+}
+
+#header {
+  height: @offset-horizontal;
+  margin-top: @offset-vertical;
+  .wrapper {
+    padding: 0 @offset-horizontal;
+  }
+  #logo {
+    background: url("@{root}/i/logo.svg") no-repeat;
+    height: @offset-horizontal;
+    width: 104px;
+    position: absolute;
+    left: @offset-horizontal;
+    top: 0;
+  }
+  .header__link {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: @font-regular-small;
+    color: @color-yellow;
+    padding: 0px 0px 17px 32px;
+    letter-spacing: 1px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &_iconed{
+      color: @color-white;
+      background: url("@{root}/i/arrow_down.png") no-repeat right -5px;
+      padding-right: 25px;
+    }
+  }
+}
+
+#footer {
+  background-color: @color-gray-darkest;
+  margin-bottom: -6px;
+  p {
+    font: @font-footer;
+    color: @color-gray-footer;
+    margin: 10px 0;
+  }
+  a {
+    color: @color-gray-footer;
+    &:hover {
+      color: @color-white;
+    }
+  }
+  .wrapper {
+    padding: 30px @offset-horizontal;
+  }
+  .footer {
+    &__menu {
+      > div {
+        padding: 0 35px;
+        max-width: 200px;
+        &:first-child {
+          padding: 0;
+        }
+        > ul {
+          > li {
+            > a {
+              color: @color-white;
+            }
+            > span {
+              display: inline-block;
+              height: 22px;
+            }
+          }
+        }
+      }
+      a {
+        color: @color-gray-dark;
+      }
+    }
+    &__info {
+      margin-bottom: 30px;
+      img {
+        padding: 0px 0px 20px 30px;
+      }
+    }
+  }
+}
+
+// ...and just for fun:
+* {
+  .transition(all 0.25s ease-in);
+}

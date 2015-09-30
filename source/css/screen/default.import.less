@@ -1,0 +1,96 @@
+@media (min-width: (@screen-default + 1px)) and (max-width: @screen-medium) {
+  html, body {
+    font: @font-light-default-mobile;
+  }
+  h1 {
+    font: @font-extralight-large-tablet;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font: @font-regular-default-mobile;
+    margin: 0;
+  }
+  h3 {
+    font: @font-extralight-default-mobile;
+    margin-bottom: 35px;
+  }
+  h4 {
+    font: @font-bold-large;
+  }
+	#main {
+    max-width: @screen-default;
+    .wrapper {
+      padding: @offset;
+    }
+  }
+  #header {
+    margin-top: @offset;
+    #logo {
+      left: @offset;
+    }
+  }
+  #footer {
+    > .wrapper {
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    .footer {
+      &__menu {
+        text-align: center;
+        border-bottom: 1px solid #484848;
+        > div {
+          padding: 0;
+          display: inline-block;
+          ul ul, ul + ul {
+            display: none;
+          }
+          a {
+            font: @font-regular-small-mobile;
+            text-decoration: none;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  #lead {
+    height: 560px;
+  }
+  #comission {
+    text-align: center;
+    height: 215px;
+    .comission {
+      &__percentage {
+        padding: 0 35px;
+        img {
+          width: 210px;
+        }
+      }
+      &__tip {
+        display: none;
+      }
+    }
+  }
+  #payment {
+    .banner {
+      margin-bottom: 60px;
+      &__item {
+        margin: 10px 20px;
+      }
+    }
+  }
+  #register-form {
+    .controls {
+      &__input {
+        width: 180px;
+      }
+      &__btn {
+        width: 240px;
+      }
+    }
+  }
+  #social {
+    border: none;
+  }
+}

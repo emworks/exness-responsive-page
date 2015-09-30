@@ -1,0 +1,69 @@
+.controls {
+  &__label {
+    position: relative;
+    display: inline-block;
+    height: @controls-height;
+    line-height: @controls-height;
+    margin-bottom: @offset-vertical;
+  }
+  &__input {
+    display: inline-block;
+    width: 280px;
+    height: @controls-height;
+    line-height: @controls-height;
+    color: @color-gray-dark;
+    background: @color-gray-light;
+    border: 1px solid transparent;
+    margin: 0 11px 0 0;
+    padding: 0 @offset;
+    margin-bottom: @offset-vertical;
+    box-sizing: border-box;
+    .transition(all 0.3s);
+    &:focus {
+      color: @color-black;
+      background: @color-white;
+      border: 1px solid @color-gray;
+      box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+  &__tip {
+    position: absolute;
+    top: @controls-height;
+    left: @offset;
+    font: @font-regular-small;
+    color: @color-gray-dark;
+    margin-top: 15px;
+  }
+  &__btn {
+    display: inline-block;
+    background: @color-gray-dark;
+    font: @font-regular-small;
+    color: @color-black;
+    width: 304px;
+    height: @controls-height;
+    line-height: @controls-height;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0 0 15px;
+    text-align: left;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    &:hover {
+      text-decoration: none;
+    }
+    > span {
+      display: block;
+      color: @color-black;
+      background: url("@{root}/i/arrow_right.png") no-repeat right center;
+      padding: 0px 32px;
+      margin-right: @offset;
+      white-space: nowrap;
+      letter-spacing: 1px;
+    }
+    &_yellow {
+      background: @color-yellow;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "responsive-page",
+  "version": "0.0.1",
+  "description": "Responsive page example",
+  "author": "Yevgeny Yakushev <e.v.yakushev@gmail.com>",
+  "main": "",
+  "devDependencies": {
+    "less": "~2.5.3",
+    "minify": "~1.4.20"
+  },
+  "scripts": {
+    "build:css": "lessc source/css/main.less public/css/main.css",
+    "build": "npm run build:css",
+    "release:css": "npm run build:css && minify public/css/main.css > public/css/main.min.css",
+    "release": "npm run release:css"
+  }
+}

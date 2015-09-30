@@ -1,0 +1,57 @@
+/** Top level rules */
+
+html, body {
+  height: 100%;
+  font: @font-regular-default;
+  color: @color-black;
+}
+h1 {
+  font: @font-extralight-large;
+  color: @color-white;
+  margin: 0 0 20px;
+}
+h2 {
+  font: @font-regular-large;
+  margin: 0 0 10px;
+}
+h3 {
+  font: @font-extralight-default;
+  color: @color-gray-dark;
+  margin: 0 0 35px;
+}
+h4 {
+  font: @font-regular-large;
+  margin: 0 0 20px;
+}
+a {
+  outline: none;
+  color: #0065AA;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+p {
+  margin: 0 0 5px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    width: 100%;
+    a {
+      font: @font-light-default;
+      margin-bottom: 5px;
+      display: inline-block;
+      min-height: 18px;
+    }
+    ul {
+      li {
+        a {
+          color: @color-gray-dark;
+        }
+      }
+    }
+  }
+}

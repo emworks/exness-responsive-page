@@ -1,0 +1,112 @@
+@media (max-width: @screen-default) {
+  html, body {
+    font: @font-light-default-mobile;
+  }
+  h1 {
+    font: @font-extralight-large-mobile;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font: @font-regular-default-mobile;
+  }
+  h3 {
+    font: @font-extralight-default-mobile;
+    color: @color-gray-lightest;
+    margin-bottom: 35px;
+  }
+  h4 {
+    font: @font-bold-large;
+  }
+	#main {
+    max-width: @screen-small;
+    .wrapper {
+      padding: @offset;
+    }
+  }
+  #header {
+    margin-top: @offset;
+    #logo {
+      left: @offset;
+    }
+    .header__link {
+      display: none;
+    }
+  }
+  #footer {
+    > .wrapper {
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    .footer {
+      &__menu {
+        text-align: center;
+        border-bottom: 1px solid #484848;
+        > div {
+          padding: 0;
+          display: inline-block;
+          ul ul, ul + ul {
+            display: none;
+          }
+          a {
+            font: @font-regular-small-mobile;
+            text-decoration: none;
+            margin: 0 5px;
+          }
+        }
+      }
+      &__info {
+        margin-bottom: 20px;
+        text-align: center;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+  #lead {
+    margin-top: -(@offset-horizontal + @offset);
+    height: 560px;
+  }
+  #comission {
+    text-align: center;
+    .comission {
+      &__percentage {
+        padding: 35px 0;
+        display: block !important;
+        img {
+          width: 210px;
+        }
+      }
+      &__tip {
+        display: none;
+      }
+    }
+  }
+  #payment {
+    padding-bottom: 50px;
+    .banner {
+      max-height: 70px;
+      overflow: hidden;
+      margin-bottom: 60px;
+      &__item {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+  #register-form {
+    margin-bottom: @offset;
+    .controls {
+      &__label, &__input {
+        display: none;
+      }
+    }
+  }
+  #social {
+    border: none;
+  }
+  .controls__btn {
+    width: 354px;
+  }
+}
