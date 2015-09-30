@@ -1,3 +1,3 @@
-# exness-responsive-page
+# Responsive page example
 
-demo: https://emworks.github.io/exness-responsive-page/
+Live demo: https://emworks.github.io/exness-responsive-page/
